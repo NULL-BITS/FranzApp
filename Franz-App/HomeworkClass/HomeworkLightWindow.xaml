@@ -1,0 +1,72 @@
+﻿<Page x:Class="Franz_App.HomeworkClass.HomeworkLightWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Franz_App.HomeworkClass"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomeworkLightWindow">
+
+    <Grid Background="White">
+        <Label Content="Hausaufgaben" HorizontalAlignment="Center" Margin="0,0,0,350" VerticalAlignment="Center" FontSize="16"/>
+        <Button x:Name="btnBack" Content="Zurück" HorizontalAlignment="Left" Margin="687,379,0,0" VerticalAlignment="Top" Width="75" Click="btnBack_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <DataGrid x:Name="dtgHomework" HorizontalAlignment="Left" Height="200" Margin="30,174,0,0" VerticalAlignment="Top" Width="732" IsEnabled="False" SelectionChanged="dtgHomework_SelectionChanged" UseLayoutRounding="False">
+            <DataGrid.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <ComboBox x:Name="cboSubject" HorizontalAlignment="Left" Margin="30,147,0,0" VerticalAlignment="Top" Width="220">
+            <ComboBoxItem>Deutsch</ComboBoxItem>
+            <ComboBoxItem>Englisch</ComboBoxItem>
+            <ComboBoxItem>Mathe</ComboBoxItem>
+            <ComboBoxItem>Latein</ComboBoxItem>
+            <ComboBoxItem>Spanisch</ComboBoxItem>
+            <ComboBoxItem>Französisch</ComboBoxItem>
+            <ComboBoxItem>Erdkunde</ComboBoxItem>
+            <ComboBoxItem>Biologie</ComboBoxItem>
+            <ComboBoxItem>Chemie</ComboBoxItem>
+            <ComboBoxItem>Physik</ComboBoxItem>
+            <ComboBoxItem>Politik</ComboBoxItem>
+            <ComboBoxItem>Geschichte</ComboBoxItem>
+            <ComboBoxItem>Sport</ComboBoxItem>
+            <ComboBoxItem>Kunst</ComboBoxItem>
+            <ComboBoxItem>Musik</ComboBoxItem>
+            <ComboBoxItem Height="20">Religion</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="txtSubmissionDate" HorizontalAlignment="Left" Height="22" Margin="255,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button x:Name="btnAddHomework" Content="Hinzufügen" HorizontalAlignment="Left" Margin="542,149,0,0" VerticalAlignment="Top" Width="220" Click="btnAddHomework_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox x:Name="txtHomeworkDescription" HorizontalAlignment="Left" Height="40" Margin="30,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="732"/>
+        <Label x:Name="lblSubjekt" Content="Fach" HorizontalAlignment="Left" Margin="26,127,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSubmissionDate" Content="Abgabedatum" HorizontalAlignment="Left" Margin="252,128,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblHomeworkDescription" Content="Hausaufgabe" HorizontalAlignment="Left" Margin="26,69,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnRemove" Content="Entfernen" HorizontalAlignment="Left" Margin="30,379,0,0" VerticalAlignment="Top">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Page>

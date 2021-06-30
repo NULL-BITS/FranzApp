@@ -55,20 +55,104 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SettingsClass\SettingsDarkWindow.xaml.cs">
+      <DependentUpon>SettingsDarkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsClass\SettingsLightWindow.xaml.cs">
+      <DependentUpon>SettingsLightWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AccountManagamentClass\AccountManagementDarkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountManagamentClass\AccountManagementLightWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeworkClass\HomeworkDarkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeworkClass\HomeworkLightWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginClass\LoginDarkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginClass\LoginLightWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainClass\MainDarkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainClass\MainLightWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AccountManagamentClass\AccountManagementDarkWindow.xaml.cs">
+      <DependentUpon>AccountManagementDarkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagamentClass\AccountManagementLightWindow.xaml.cs">
+      <DependentUpon>AccountManagementLightWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HomeworkClass\HomeworkDarkWindow.xaml.cs">
+      <DependentUpon>HomeworkDarkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkClass\HomeworkLightWindow.xaml.cs">
+      <DependentUpon>HomeworkLightWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginClass\LoginDarkWindow.xaml.cs">
+      <DependentUpon>LoginDarkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginClass\LoginLightWindow.xaml.cs">
+      <DependentUpon>LoginLightWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass\MainDarkWindow.xaml.cs">
+      <DependentUpon>MainDarkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass\MainLightWindow.xaml.cs">
+      <DependentUpon>MainLightWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PasswordChangeClass\PasswordChangeDarkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PasswordChangeClass\PasswordChangeLightWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsClass\SettingsDarkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsClass\SettingsLightWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PasswordChangeClass\PasswordChangeDarkWindow.xaml.cs">
+      <DependentUpon>PasswordChangeDarkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChangeClass\PasswordChangeLightWindow.xaml.cs">
+      <DependentUpon>PasswordChangeLightWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,5 +178,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
