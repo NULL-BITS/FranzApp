@@ -20,7 +20,7 @@
             </Label.BorderBrush>
         </Label>
         <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Center" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Center" Foreground="Black" Margin="0,199,0,0"/>
-        <Button x:Name="btnLogout" Content="Abmelden" HorizontalAlignment="Center" Margin="146,382,146,0" VerticalAlignment="Top" Width="100" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" Click="btnLogout_Click">
+        <Button x:Name="btnLogout" Content="Abmelden" HorizontalAlignment="Center" Margin="146,382,146,0" VerticalAlignment="Top" Width="100" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -42,7 +42,7 @@
             </TextBox.Resources>
         </TextBox>
         <Button x:Name="btnChangeProfilePicture" Content="" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="80" Background="#00DDDDDD" BorderBrush="#00707070"/>
-        <Button x:Name="btnShowPassword" Content=" 👁" HorizontalAlignment="Left" Margin="320,226,0,0" VerticalAlignment="Top" Width="30" Foreground="Black" BorderBrush="{x:Null}" Background="{x:Null}" Height="20" Click="btnShowPassword_Click"/>
+        <Button x:Name="btnShowPassword" Content=" 👁" HorizontalAlignment="Left" Margin="520,226,0,0" VerticalAlignment="Top" Width="30" Foreground="Black" BorderBrush="{x:Null}" Background="{x:Null}" Height="20" />
         <Label x:Name="lblEMail" Content="E-Mail" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Center" Foreground="Black"/>
         <TextBox x:Name="txtEMail" HorizontalAlignment="Center" Margin="0,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" MinHeight="20">
             <TextBox.Resources>
@@ -59,7 +59,7 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Button x:Name="btnBack" Content="Zurück" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="60" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" Click="btnBack_Click">
+        <Button x:Name="btnBack" Content="Zurück" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="60" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>

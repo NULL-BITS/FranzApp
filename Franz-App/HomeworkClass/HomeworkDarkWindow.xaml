@@ -10,14 +10,14 @@
 
     <Grid Background="#FF2C2C2C">
         <Label Content="Hausaufgaben" HorizontalAlignment="Center" Margin="0,0,0,350" VerticalAlignment="Center" FontSize="16" Foreground="White"/>
-        <Button x:Name="btnBack" Content="Zurück" HorizontalAlignment="Left" Margin="687,379,0,0" VerticalAlignment="Top" Width="75" Click="btnBack_Click">
+        <Button x:Name="btnBack" Content="Zurück" HorizontalAlignment="Left" Margin="687,379,0,0" VerticalAlignment="Top" Width="75" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <DataGrid x:Name="dtgHomework" HorizontalAlignment="Left" Height="200" Margin="30,174,0,0" VerticalAlignment="Top" Width="732" IsEnabled="False" SelectionChanged="dtgHomework_SelectionChanged" UseLayoutRounding="False" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
+        <DataGrid x:Name="dtgHomework" HorizontalAlignment="Left" Height="200" Margin="30,174,0,0" VerticalAlignment="Top" Width="732" IsEnabled="False"  UseLayoutRounding="False" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
             <DataGrid.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -51,7 +51,7 @@
         </TextBox>
 
 
-        <Button x:Name="btnAddHomework" Content="Hinzufügen" HorizontalAlignment="Left" Margin="542,149,0,0" VerticalAlignment="Top" Width="220" Click="btnAddHomework_Click">
+        <Button x:Name="btnAddHomework" Content="Hinzufügen" HorizontalAlignment="Left" Margin="542,149,0,0" VerticalAlignment="Top" Width="220" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
