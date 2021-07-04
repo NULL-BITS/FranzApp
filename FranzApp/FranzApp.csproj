@@ -55,12 +55,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AccountManagementClass\AccountManagementAssistant.cs" />
+    <Compile Include="AccountManagementClass\AccountManagementDarkPage.xaml.cs">
+      <DependentUpon>AccountManagementDarkPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagementClass\AccountManagementLightPage.xaml.cs">
+      <DependentUpon>AccountManagementLightPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assistant\DatabaseAssistant.cs" />
+    <Compile Include="Assistant\GeneralAssistant.cs" />
+    <Compile Include="Assistant\LogAssistant.cs" />
+    <Compile Include="HomeClass\HomeAssistant.cs" />
+    <Compile Include="HomeClass\HomeDarkPage.xaml.cs">
+      <DependentUpon>HomeDarkPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeClass\HomeLightPage.xaml.cs">
+      <DependentUpon>HomeLightPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Library\User.cs" />
+    <Compile Include="LoginClass\LoginAssistant.cs" />
+    <Compile Include="LoginClass\LoginDarkPage.xaml.cs">
+      <DependentUpon>LoginDarkPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginClass\LoginLightPage.xaml.cs">
+      <DependentUpon>LoginLightPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass\MainAssistant.cs" />
+    <Compile Include="MainClass\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -86,13 +115,36 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="AccountManagemantClass\" />
-    <Folder Include="Assistant\" />
-    <Folder Include="HomeClass\" />
-    <Folder Include="Library\" />
-    <Folder Include="LoginClass\" />
-    <Folder Include="MainClass\" />
+    <Page Include="AccountManagementClass\AccountManagementDarkPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccountManagementClass\AccountManagementLightPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeClass\HomeDarkPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeClass\HomeLightPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginClass\LoginDarkPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginClass\LoginLightPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainClass\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
