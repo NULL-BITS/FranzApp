@@ -90,6 +90,13 @@
     <Compile Include="MainClass\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PasswordChangeClass\PasswordChangeAssistant.cs" />
+    <Compile Include="PasswordChangeClass\PasswordChangeDarkPage.xaml.cs">
+      <DependentUpon>PasswordChangeDarkPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChangeClass\PasswordChangeLightPage.xaml.cs">
+      <DependentUpon>PasswordChangeLightPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -142,6 +149,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainClass\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PasswordChangeClass\PasswordChangeDarkPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PasswordChangeClass\PasswordChangeLightPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

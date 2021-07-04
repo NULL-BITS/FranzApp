@@ -8,7 +8,57 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AccountManagementDarkPage">
 
-    <Grid>
+    <Grid Background="#FF2C2C2C" OpacityMask="#FFC50505">
+        <Ellipse x:Name="ellProfilePicture" HorizontalAlignment="Center" Height="100" Margin="0,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Fill="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="de-de" Text="Change Picture"/></TextBlock>
+        <Label x:Name="lblUsername" Content="Name" HorizontalAlignment="Center" Margin="0,135,0,0" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Center" Foreground="White"/>
+        <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Center" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Center" Foreground="White" Margin="0,185,0,0"/>
+        <Button x:Name="btnLogout" Content="Abmelden" HorizontalAlignment="Center" Margin="146,359,146,0" VerticalAlignment="Top" Width="100" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextAlignment="Center" Margin="0,211,0,0" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Center" Margin="0,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button x:Name="btnChangeProfilePicture" Content="" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="80" Background="#00DDDDDD" BorderBrush="#00707070"/>
+        <Button x:Name="btnShowPassword" Content=" 👁" HorizontalAlignment="Center" Margin="316,209,46,0" VerticalAlignment="Top" Width="30" Foreground="Black" BorderBrush="{x:Null}" Background="{x:Null}" />
+        <Label x:Name="lblEMail" Content="E-Mail" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Center" Foreground="White"/>
+        <TextBox x:Name="txtEMail" HorizontalAlignment="Center" Margin="0,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label x:Name="lblGroup" Content="Klasse" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Center" Foreground="White"/>
+        <TextBox x:Name="txtGroup" HorizontalAlignment="Center" Margin="0,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button x:Name="btnBack" Content="Zurück" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="60" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         
     </Grid>
 </Page>

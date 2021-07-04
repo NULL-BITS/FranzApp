@@ -8,7 +8,42 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="LoginLightPage">
 
-    <Grid>
+    <Grid UseLayoutRounding="False" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblLogin" Content="Login" HorizontalAlignment="Left" Margin="148,26,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtEMail" HorizontalAlignment="Left" Height="23" Margin="50,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label x:Name="lblEMail" Content="E-Mail" HorizontalAlignment="Left" Margin="46,88,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="50,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label x:Name="lblPassword" Content="Passwort" HorizontalAlignment="Left" Margin="46,131,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Button x:Name="btnLogin" Content="Anmelden" HorizontalAlignment="Left" Margin="50,207,0,0" VerticalAlignment="Top" Width="250">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnPasswordForgot" Content="Passwort vergessen?" HorizontalAlignment="Left" Margin="201,222.77,0,0" VerticalAlignment="Top" Width="100" UseLayoutRounding="False" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF009BFF" FontStyle="Italic" FontSize="10"/>
+        <Button x:Name="btnDarkmode" Content="Darkmode" HorizontalAlignment="Right" Margin="0,11,10,0" VerticalAlignment="Top" Width="75">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         
     </Grid>
 </Page>
